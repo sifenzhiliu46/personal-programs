@@ -1,0 +1,8 @@
+# 编译产物
+*.exe
+*.o
+*.obj
+
+# IDE/系统
+.DS_Store
+Thumbs.db

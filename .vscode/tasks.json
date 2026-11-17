@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C++: g++.exe 编译当前文件",
+            "command": "D:/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++17",
+                "-Wall",
+                "-static",
+                "-fexec-charset=UTF-8",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "C++17 | D:/mingw64/bin/g++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C: gcc.exe 编译当前文件(纯 C 时用)",
+            "command": "D:/mingw64/bin/gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c17",
+                "-Wall",
+                "-static",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "C17 | D:/mingw64/bin/gcc.exe"
+        }
+    ]
+}
